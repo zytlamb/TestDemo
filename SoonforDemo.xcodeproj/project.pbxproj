@@ -30,6 +30,7 @@
 		65194CDB214896100016EB40 /* SFSubPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65194CDA214896100016EB40 /* SFSubPageViewController.m */; };
 		65194CDE2148AEF90016EB40 /* SFPageStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65194CDD2148AEF90016EB40 /* SFPageStyleViewController.m */; };
 		65194CE12148BF720016EB40 /* SFMenuBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65194CE02148BF720016EB40 /* SFMenuBarView.m */; };
+		651ADC0021EF0761005E35BF /* SFNormalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 651ADBFF21EF0761005E35BF /* SFNormalPickerView.m */; };
 		6523A69A215C8A1D00321A2A /* SFPhotosPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6523A699215C8A1C00321A2A /* SFPhotosPickerVC.m */; };
 		6525564A2169ED8400A781E7 /* MOPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6525562E2169ED8400A781E7 /* MOPhotoPreviewCell.m */; };
 		6525564B2169ED8400A781E7 /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 652556302169ED8400A781E7 /* NSBundle+TZImagePicker.m */; };
@@ -134,6 +135,8 @@
 		65194CDD2148AEF90016EB40 /* SFPageStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPageStyleViewController.m; sourceTree = "<group>"; };
 		65194CDF2148BF720016EB40 /* SFMenuBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFMenuBarView.h; sourceTree = "<group>"; };
 		65194CE02148BF720016EB40 /* SFMenuBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMenuBarView.m; sourceTree = "<group>"; };
+		651ADBFE21EF0761005E35BF /* SFNormalPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNormalPickerView.h; sourceTree = "<group>"; };
+		651ADBFF21EF0761005E35BF /* SFNormalPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNormalPickerView.m; sourceTree = "<group>"; };
 		6523A698215C8A1C00321A2A /* SFPhotosPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPhotosPickerVC.h; sourceTree = "<group>"; };
 		6523A699215C8A1C00321A2A /* SFPhotosPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPhotosPickerVC.m; sourceTree = "<group>"; };
 		6525562D2169ED8400A781E7 /* MOPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPhotoPreviewCell.h; sourceTree = "<group>"; };
@@ -454,9 +457,19 @@
 			path = WSDaePickerView;
 			sourceTree = "<group>";
 		};
+		651ADBFD21EF06F3005E35BF /* NormalPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				651ADBFE21EF0761005E35BF /* SFNormalPickerView.h */,
+				651ADBFF21EF0761005E35BF /* SFNormalPickerView.m */,
+			);
+			path = NormalPickerView;
+			sourceTree = "<group>";
+		};
 		6523A695215C872000321A2A /* PickView */ = {
 			isa = PBXGroup;
 			children = (
+				651ADBFD21EF06F3005E35BF /* NormalPickerView */,
 				65083FC8215DAD5800C0DE38 /* WSDaePickerView */,
 				65083FC5215DAD2200C0DE38 /* SFDatePickerVC.h */,
 				65083FC6215DAD2200C0DE38 /* SFDatePickerVC.m */,
@@ -800,6 +813,7 @@
 				652556612169EF3B00A781E7 /* PicturesToChooseView.m in Sources */,
 				65536C1B21467872009A012A /* SFTextFieldViewController.m in Sources */,
 				6523A69A215C8A1D00321A2A /* SFPhotosPickerVC.m in Sources */,
+				651ADC0021EF0761005E35BF /* SFNormalPickerView.m in Sources */,
 				65194CDB214896100016EB40 /* SFSubPageViewController.m in Sources */,
 				6507A8C221426A3700D3555D /* main.m in Sources */,
 				65255667216A040000A781E7 /* SFHTTP.m in Sources */,
