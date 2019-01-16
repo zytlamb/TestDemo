@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MineOpinionImgCollCell">
+            <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXV-2V-PN6">
+                        <rect key="frame" x="4.5" y="8" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="Yr3-9y-th7"/>
+                            <constraint firstAttribute="width" constant="45" id="gze-bz-0jk"/>
+                        </constraints>
+                        <state key="normal" image="添加"/>
+                        <connections>
+                            <action selector="addImgClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="aUR-ju-aRw"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="72F-gW-YtK">
+                        <rect key="frame" x="4" y="8" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="V37-ou-IbB"/>
+                            <constraint firstAttribute="width" constant="45" id="WZe-Re-pup"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JG-T6-pz8">
+                        <rect key="frame" x="38" y="0.0" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="QD7-Uv-Pn3"/>
+                            <constraint firstAttribute="height" constant="15" id="Srq-lg-fju"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="ic_delete"/>
+                        <connections>
+                            <action selector="cancelClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Z4x-mJ-P3x"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="72F-gW-YtK" secondAttribute="bottom" id="09o-OT-Zya"/>
+                <constraint firstAttribute="bottom" secondItem="uXV-2V-PN6" secondAttribute="bottom" id="0XY-gn-W87"/>
+                <constraint firstItem="3JG-T6-pz8" firstAttribute="top" secondItem="72F-gW-YtK" secondAttribute="top" constant="-8" id="9uo-kt-o8k"/>
+                <constraint firstItem="uXV-2V-PN6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ayt-Lv-OdY"/>
+                <constraint firstAttribute="trailing" secondItem="3JG-T6-pz8" secondAttribute="trailing" id="eoo-LX-bgE"/>
+                <constraint firstItem="72F-gW-YtK" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fym-TJ-qN1"/>
+            </constraints>
+            <connections>
+                <outlet property="addBtn" destination="uXV-2V-PN6" id="2Go-SL-ICN"/>
+                <outlet property="cancelBtn" destination="3JG-T6-pz8" id="bEb-hI-m9d"/>
+                <outlet property="imgView" destination="72F-gW-YtK" id="jR9-F5-d2R"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_delete" width="15" height="15"/>
+        <image name="添加" width="60" height="60"/>
+    </resources>
+</document>
