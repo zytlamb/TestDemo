@@ -21,7 +21,14 @@
     SFNavigationViewController *navi = [SFNavigationViewController createRootVC:[HomeViewController new]];
     self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
-    //i u 会丢艾迪
+    
+    
+    
+    
+    
+    
+    
+    
     return YES;
 }
 
